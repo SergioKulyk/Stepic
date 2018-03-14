@@ -1,0 +1,8 @@
+Sample Input:
+
+Text about cats
+Text about Anacondas
+Sample Output:
+
+Text about cats
+Text about Anacondas
