@@ -23,17 +23,15 @@
 # {"": ["a"], "a": ["cat", "dog", "fly"], "cat": ["and"], "and": ["a"], "dog": ["a"]}
 
 def mimic_dict(string):
-    m = {}
-    if len(string) <= 0:
-        return m
-
-    m[""] = string.split()[0]
+    m = {"": string.split()[0]}
     words = string.split()
     i = 0
 
     while i < len(words) - 1:
         if words[i] in m:
-            m[words[i]] = m[words[i]].append([words[i]])
+            t = m[words[i]][:]
+            t.append(words[i+1])
+            m[words[i]] = t
         else:
             m[words[i]] = [words[i + 1]]
         i += 1
@@ -41,4 +39,4 @@ def mimic_dict(string):
     return m
 
 # print(mimic_dict("Uno dos tres cuatro cinco"))
-print(mimic_dict("a cat and a dog\na fly"))
+# print(mimic_dict("a cat and a dog\na fly"))
