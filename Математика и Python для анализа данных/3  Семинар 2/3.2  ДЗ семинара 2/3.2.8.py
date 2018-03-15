@@ -33,11 +33,10 @@ def mimic_dict(string):
 
     while i < len(words) - 1:
         if words[i] in m:
-            m[words[i]] = m[words[i]].append([words[i]])
+            m[words[i]] = m[words[i]] + words[i]
         else:
-            m[words[i]] = [words[i + 1]]
+            m[words[i]] = list([words[i + 1]])
         i += 1
-
     return m
 
 # print(mimic_dict("Uno dos tres cuatro cinco"))

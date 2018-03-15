@@ -19,6 +19,6 @@
 import math
 
 def def_e(x):
-    return round(math.e(x), 3)
+    return math.e**x
 
 
