@@ -43,4 +43,4 @@ def front_back(a, b):
 
     return a[:len_a] + b[:len_b] + a[len_a:] + b[len_b:]
 
-print(front_back("Kitten", "Donut"))
+# print(front_back("Kitten", "Donut"))
