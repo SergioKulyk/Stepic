@@ -40,4 +40,4 @@ def mimic_dict(string):
     return m
 
 # print(mimic_dict("Uno dos tres cuatro cinco"))
-print(mimic_dict("a cat and a dog\na fly"))
+# print(mimic_dict("a cat and a dog\na fly"))
